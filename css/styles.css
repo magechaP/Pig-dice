@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   position: fixed;
   background-size: cover;
-  text-decoration-color: #800000;
+color: #0000CD;
 
 }
 .page{
@@ -67,17 +67,25 @@ ul {
   text-align: center;
 }
 
+.multi1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("../images/image6.jpg");
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: cover;
+  text-decoration-color: #800000;
+}
+
 .centered2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+  align-items: flex-start;
+  ju
 }
 
 /*styling for easy.html*/
