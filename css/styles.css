@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   position: fixed;
   background-size: cover;
-  text-decoration-color: blue;
+  text-decoration-color: #800000;;
 
 }
 .page{
@@ -49,13 +49,13 @@ ul {
 /* Control the left side */
 .left {
   left: 0;
-  background-color: #111;
+  background-image: url("../images/image5.jpg");
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: red;
+  background-image: url("../images/image6.jpg");
 }
 
 /* If you want the content centered horizontally and vertically */
