@@ -1,33 +1,40 @@
 //business logic//
-//logic for amateur level//
+//logic for amateur terrain//
 
 
 var userscore = [];
+var userresult = function (){
+  var result = eval(userscore.join('+'));
+  alert(result);
+}
 //logic for rolling dice//
 var playerroll = () => {
   var num =Math.floor(Math.random()*6)+1;
   if (num === 1){
     //game ends for Player//
-    document.getElementsByClassName('fail')[0].textContent= ""
-    document.getElementsByClassName('pass')[0].textContent= "roll the dice";
-    //hide button//
-    $(".btn").show();
+    alert("1");
+    location.reload();
     //no user score dont push to userscore array;
-    adduserresult();
-  }
-  else if(result === undefined)
-  {
-    alert("Ooops!..you rolled a one.better luck next time")
-  }
+}
   else
   {
-    document.getElementsByClassName('fail')[0].textContent = "";
-    document.getElementsByClassName('pass')[0].textContent = "roll the dice";
-    playerroll.push(num);
+
+    userscore.push(num);
     var give = document.getElementById('usercount');
     give.innerHTML += "<li>"+num+"</li>";
-    $(".btn").show();
-    adduserresult();
+    userresult();
   }
 
   }
+
+
+//logic for professional fiasco
+
+
+//UserInterface//
+$(document).ready(function(){
+ $(".roll").on("click",function(){
+   playerroll();
+ });
+
+});
