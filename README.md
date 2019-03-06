@@ -1,6 +1,6 @@
 # Pig-Dice
 
-Pig Dice is a game where a users rolls a die and their total score builds up after each roll,provided that they dont roll a one,where their previous score is held or their total score is cancelled.
+Pig Dice is a game where a users rolls a die and their total score builds up after each roll,provided that they don't roll a one,where their previous score is held or their total score is cancelled.
 
 # Programming tools used
 
