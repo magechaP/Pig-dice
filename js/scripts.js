@@ -1,7 +1,5 @@
 //business logic//
 //logic for amateur terrain//
-
-
 var userscore = [];
 var userresult = function (){
   var result = eval(userscore.join('+'));
@@ -18,13 +16,11 @@ var playerroll = () => {
 }
   else
   {
-
     userscore.push(num);
     var give = document.getElementById('usercount');
     give.innerHTML += "<li>"+num+"</li>";
     userresult();
   }
-
   }
 //UserInterface//
 //UI for amateur level//
@@ -32,5 +28,4 @@ $(document).ready(function(){
  $(".roll").on("click",function(){
    playerroll();
  });
-
 });
